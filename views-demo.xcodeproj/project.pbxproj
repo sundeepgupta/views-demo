@@ -13,6 +13,9 @@
 		AE5B62AB1C96458B00265843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5B62A91C96458B00265843 /* Main.storyboard */; };
 		AE5B62AD1C96458B00265843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5B62AC1C96458B00265843 /* Assets.xcassets */; };
 		AE5B62B01C96458B00265843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5B62AE1C96458B00265843 /* LaunchScreen.storyboard */; };
+		AE5E51E21C96FF2B003FFBF1 /* GreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E51E11C96FF2B003FFBF1 /* GreenView.m */; };
+		AE5E51E51C96FF37003FFBF1 /* PinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E51E41C96FF37003FFBF1 /* PinkView.m */; };
+		AE5E51E81C9705F2003FFBF1 /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E51E71C9705F2003FFBF1 /* Counter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		AE5B62AC1C96458B00265843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE5B62AF1C96458B00265843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE5B62B11C96458B00265843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5E51E01C96FF2B003FFBF1 /* GreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenView.h; sourceTree = "<group>"; };
+		AE5E51E11C96FF2B003FFBF1 /* GreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenView.m; sourceTree = "<group>"; };
+		AE5E51E31C96FF37003FFBF1 /* PinkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinkView.h; sourceTree = "<group>"; };
+		AE5E51E41C96FF37003FFBF1 /* PinkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinkView.m; sourceTree = "<group>"; };
+		AE5E51E61C9705F2003FFBF1 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
+		AE5E51E71C9705F2003FFBF1 /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				AE5B62AE1C96458B00265843 /* LaunchScreen.storyboard */,
 				AE5B62B11C96458B00265843 /* Info.plist */,
 				AE5B62A01C96458B00265843 /* Supporting Files */,
+				AE5E51E01C96FF2B003FFBF1 /* GreenView.h */,
+				AE5E51E11C96FF2B003FFBF1 /* GreenView.m */,
+				AE5E51E31C96FF37003FFBF1 /* PinkView.h */,
+				AE5E51E41C96FF37003FFBF1 /* PinkView.m */,
+				AE5E51E61C9705F2003FFBF1 /* Counter.h */,
+				AE5E51E71C9705F2003FFBF1 /* Counter.m */,
 			);
 			path = "views-demo";
 			sourceTree = "<group>";
@@ -151,6 +166,9 @@
 			files = (
 				AE5B62A81C96458B00265843 /* ViewController.m in Sources */,
 				AE5B62A51C96458B00265843 /* AppDelegate.m in Sources */,
+				AE5E51E21C96FF2B003FFBF1 /* GreenView.m in Sources */,
+				AE5E51E51C96FF37003FFBF1 /* PinkView.m in Sources */,
+				AE5E51E81C9705F2003FFBF1 /* Counter.m in Sources */,
 				AE5B62A21C96458B00265843 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +316,7 @@
 				AE5B62B61C96458B00265843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

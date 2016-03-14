@@ -1,27 +1,44 @@
-//
-//  ViewController.m
-//  views-demo
-//
-//  Created by sundeep on 2016-03-13.
-//  Copyright © 2016 sundeep. All rights reserved.
-//
-
 #import "ViewController.h"
+#import "GreenView.h"
+#import "PinkView.h"
+#import "Counter.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *greenLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pinkLabel;
+@property (strong, nonatomic) Counter *counter;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.counter = [[Counter alloc] init];
+    [self updateView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)updateView {
+    NSInteger greenCount = self.counter.greenCount;
+    NSString *greenText = [NSString stringWithFormat:@"%@", @(greenCount)];
+    self.greenLabel.text = greenText;
+    
+    NSInteger pinkCount = self.counter.pinkCount;
+    NSString *pinkText = [NSString stringWithFormat:@"%@", @(pinkCount)];
+    self.pinkLabel.text = pinkText;
 }
+
+- (IBAction)greenTapped:(id)sender {
+    [self.counter incrementGreen];
+    [self updateView];
+}
+
+- (IBAction)pinkTapped:(id)sender {
+    [self.counter incrementPink];
+    [self updateView];
+}
+
+
+
 
 @end
